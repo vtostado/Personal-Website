@@ -1,8 +1,28 @@
 
-
+a:-webkit-any-link{
+text-decoration:none !important;
+}
 /* --GLOBAL--*/
 
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
 
+ main {
+   flex: 1 0 auto;
+ }
+
+footer {
+  text-align: center;
+  outline: none !important;
+}
+
+.fa {
+  padding-right: 30px;
+  color: white;
+}
 /* --Navbar--*/
 nav.navbar-fixed {
   /* background: white; */
