@@ -1,19 +1,12 @@
 {{ partial "head.html" .}}
 <body>
 
-  <div class="navbar" id ="nav">
-  <a href="#default" id="logo"> >_VANESSA TOSTADO </a>
-  <div class="navbar-right">
-    <li onclick="scrollto('home');">HOME</li>
-    <li onclick="scrollto('story');">STORY TIME</li>
-    <li onclick="scrollto('portfolio');">PORTFOLIO</li>
-    <li onclick="scrollto('fun');">FUN</li>
-  </div>
-</div>
+{{ partial "navbar.html" .}}
+
 
 
 <div class="home">
-<p class="line-1 anim-typewriter">Hello, World!</p>
+<!-- <p class="line-1 anim-typewriter">Hello, World!</p> -->
 <!-- <img src="/images/profile.jpg" class = "profile" alt="Picture of Vanessa Tostado"> -->
   <!-- <h1 id = "about_me">About Me </h1>
 <p id = "content" >
@@ -43,7 +36,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <div class="portfolio"></div>
 
 <div class="fun"></div>
-</div>
+
 
 
 </body>

@@ -1,227 +1,30 @@
 
 
 /* --GLOBAL--*/
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 
 /* --Navbar--*/
-.navbar {
-  overflow: hidden;
-  /* background-color: #f1f1f1; */
-  color: #fff;
-  padding: 20px 50px;
-  /* transition: 0.4s; */
-  position: fixed;
-  width: 100%;
-  top: 5px;
-  /* margin: 5px 5px; */
-  z-index: 99;
+nav.navbar-fixed {
+  /* background: white; */
+  /* border-color: : black; */
+  /* box-shadow: none; */
+  background-color: red;
 }
 
-.navbar li{
-  float: left;
-  /* color: #FF6A5C; */
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 23px;
-  line-height: 25px;
-  border-radius: 4px;
-  list-style-type: none;
-  cursor: pointer;
+nav ul a {
+  text-decoration: none!important;
+}
+nav #brand-logo{
+  text-decoration: none!important;
+
 }
 
 
-.navbar #logo {
-  font-size: 35px;
-  font-weight: bold;
-  transition: 0.4s;
-    color: #fff;
-    text-decoration: none;
+.dropdown-content{
+    background-color: red !important;
+    top: 50px !important;
 
 }
+.dropdown-content li{
 
-.navbar li:hover {
-  /* background-color: #ddd; */
-  color: black;
-}
-
-.navbar li.active {
-  /* background-color: dodgerblue; */
-  color: white;
-}
-
-.navbar-right {
-  float: right;
-}
-
-.menu_pink {
- color: #FF6A5C;
-}
-
-.menu_blue {
- color: #5214ff;
-}
-
-.profile{
-  width: 23%;
-  border-radius: 50%;
-  margin: -90px 500px ;
-  /* display: block; */
-  /* margin: auto; */
-  border:3px solid #FF6A5C;
-
-  /* object-fit: cover; */
-}
-
-/* --screen resolution--*/
-
-@media screen and (max-width: 580px) {
-  .navbar {
-    padding: 20px 10px !important;
-  }
-  .navbar li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar-right {
-    float: none;
-  }
-}
-
-/* --STORY--*/
-
-.story {
-  /* background-color: #ff526f; */
-  background-image: url("../images/yellow.jpg");
-  margin-top:-10px;
-  /* height:1000px;background-color:red;font-size:36px */
-
-  /* background-color: #FF6A5C; */
-  /* background-image: url("../images/blue.jpg"); */
-  /* background-image: url("../images/coral.jpg"); */
-   height: 1000px;
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
-
-.story h1{
-  width: 20%;
-}
-
-.story-container{
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-  width: 50%;
-  height: 50%;
-}
-
-
-/* --HOME--*/
-.home
-{
-  /* Set a specific height */
-  height: 900px;
-  /* width: 100%; */
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* top:50px; */
- padding-top: 15%;
- font-size:20px;
- min-height: 900px;
- background-image: url("../images/blue.jpg");
- /* background-image: url("../images/profile.jpg"); */
- /* background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; */
-
-
-}
-.home #about_me {
-  color: white;
-}
-.home #content{
-  color: white;
-}
-
-.portfolio{
-  min-height: 1000px;
-
-  background-image: url("../images/yellow.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-
-}
-
-/* --FUN--*/
-.fun{
-  min-height: 1000px;
-  /* background-color: #57BC90; */
-   background-image: url("../images/teal.jpg");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-/* Global */
-/* html{
-  min-height: 100%;
-  overflow: hidden;
-} */
-/* body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255,255,255,.75);
-  font-family: 'Anonymous Pro', monospace;
-  background-color: rgb(25,25,25);
-} */
-
-/* --Animation--*/
-.line-1{
-    /* position: relative; */
-    top: 50%;
-    width: 8em;
-    /* margin: 0 auto; */
-    border-right: 2px solid #FF6A5C;
-    font-size: 400%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    color: #FF6A5C;
-    margin: -56px 50px 10px;
-}
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 10s steps(20) 1s  normal both,
-             blinkTextCursor 600ms steps(44) infinite;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 5.8em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: #FF6A5C;}
-  to{border-right-color: transparent;}
 }
