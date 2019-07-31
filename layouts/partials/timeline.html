@@ -1,0 +1,134 @@
+<div class="timeline">
+   <div class="container">
+
+     <div class="row" id ="1">
+       <div class="photo">
+         <img src="images/profile2.png" class="photo" alt="Avatar">
+         <div class="vl"></div>
+
+       </div>
+       <div class="description">
+         <h5>Civic Digital Fellow via Coding it Forward</h5>
+         <span>date</span>
+          <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+       </div>
+     </div>
+
+
+
+     <div class="row" id ="2">
+       <div class="photo">
+         <img src="images/grad.png" class="photo" alt="Avatar">
+         <div class="vl"></div>
+
+       </div>
+       <div class="description">
+         <h5>Goodbye, Wesleyan!</h5>
+         <span>date</span>
+          <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+       </div>
+     </div>
+
+     <div class="row" id ="3">
+       <div class="photo">
+         <img src="images/evo2.png" class="photo" alt="Avatar">
+         <div class="vl2"></div>
+
+       </div>
+       <div class="description">
+         <h5>EVO!</h5>
+         <span>date</span>
+          <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+       </div>
+     </div>
+
+     <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons">arrow_downward</i>See more</div>
+       <div class="collapsible-body">
+         <div class="row" id ="4">
+         <div class="photo">
+           <img src="images/hack.jpg" class="photo" alt="Avatar">
+           <div class="vl"></div>
+
+         </div>
+         <div class="description">
+           <h5>Random Hacks of Kindness </h5>
+           <span>date</span>
+            <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+         </div>
+        </div>
+
+       <div class="row" id ="5">
+         <div class="photo">
+           <img src="images/buda.png" class="photo" alt="Avatar">
+           <div class="vl"></div>
+
+         </div>
+         <div class="description">
+           <h5>Study Abroad: Budapest</h5>
+           <span>date</span>
+            <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+         </div>
+       </div>
+
+
+       <div class="row" id ="6">
+         <div class="photo">
+           <img src="images/linkedin.jpg" class="photo" alt="Avatar">
+           <div class="vl"></div>
+
+         </div>
+         <div class="description">
+           <h5>Linkedin</h5>
+           <span>date</span>
+            <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+         </div>
+       </div>
+
+       <div class="row" id ="7">
+         <div class="photo">
+           <img src="images/code.png" class="photo" alt="Avatar">
+
+         </div>
+         <div class="description">
+           <h5>Hello, World!</h5>
+           <span>date</span>
+            <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+         </div>
+       </div>
+       </div>
+       </li>
+      </ul>
+
+
+     </div>
+   </div>
+
+   <script type="text/javascript">
+
+     // for (i = 0; i < n.length-1; i++) {
+     var distance = $('#' + '2').offset().top - $('#' + '1' ).offset().top;
+     console.log( distance);
+     var  vls = document.getElementsByClassName("vl" );
+     for (k = 0; k < vls.length; k++) {
+       vls[k].style.height = distance +  "px";
+     };
+
+
+   document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var selector =  document.querySelectorAll('.collapsible-header');
+  var  vl2 = document.getElementsByClassName("vl2" );
+  console.log(selector);
+  var instances = M.Collapsible.init(elems, {onOpenStart: function () {
+        console.log("I trigger as soon as the page is loaded");
+        selector[0].style.display = "none";
+        vl2[0].style.height = distance +  "px";
+
+    }})
+
+
+});
+
+   </script>

@@ -8,6 +8,7 @@ body {
    display: flex;
    min-height: 100vh;
    flex-direction: column;
+   /* font-family: 'Gothman'; */
  }
 
  main {
@@ -19,6 +20,11 @@ footer {
   outline: none !important;
 }
 
+
+
+.parallax-container .parallax img{
+  opacity: 1 !important;
+}
 .fa {
   padding-right: 30px;
   color: white;
@@ -28,14 +34,29 @@ nav.navbar-fixed {
   /* background: white; */
   /* border-color: : black; */
   /* box-shadow: none; */
-  background-color: red;
+  background-color: transparent;
+
+  box-shadow: none!important;
+  position: fixed;
+}
+nav a.sidenav-trigger i{
+  float: right !important;
 }
 
 nav ul a {
   text-decoration: none!important;
+  font-size: 19px !important;
 }
 nav #brand-logo{
   text-decoration: none!important;
+  font-size: 30px;
+  padding-left: 25px;
+
+}
+
+nav #brand-logo a:hover{
+  text-decoration: none!important;
+  font-size: 27px;
 
 }
 
@@ -48,3 +69,72 @@ nav #brand-logo{
 .dropdown-content li{
 
 }
+
+
+.timeline .row .foo{
+  margin-left: 20px;
+}
+
+.row{
+  padding-bottom: 7% !important;
+}
+.row .photo{
+    float: left;
+    width: 100px;
+    border-radius: 55%;
+    position: absolute;
+
+}
+
+.row .photo img{
+    border: 3px dashed blue;
+    padding: 3px;
+
+}
+.row .description{
+  margin-left: 20px;
+  float: right;
+ width: calc(100% - 140px);
+
+}
+
+.timeline.content{
+  margin-top: 3px;
+}
+
+.container{
+  margin-top: 60px !important;
+}
+
+.vl{
+
+  border-left: 3px solid green;
+  margin-left: 52px;
+
+}
+.vl2{
+
+  border-left: 3px solid green;
+  margin-left: 52px;
+  height: 200px;
+
+}
+
+.collapsible-header{
+  padding-top: 20px !important;
+  border: 0!important;
+  box-shadow: none!important;
+}
+
+.collapsible-body, .collapsible, ul.collapsible>li
+{
+  margin: 0!important;;
+  padding: 0!important;
+  border: 0!important;
+  box-shadow: none!important;
+  background: #fff;
+}
+
+/* .timeline .expandable .expand {
+  max-height: 250px;
+} */

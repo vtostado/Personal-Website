@@ -3,8 +3,25 @@
 
 {{ partial "navbar.html" .}}
 
+<div class="parallax-container">
+  <div class="parallax"><img src="images/coral.jpg"></div>
 
-<!-- <p>hi</p> -->
+</div>
+<div class="section white">
+  <div class="row container">
+    <h2 class="header">Parallax</h2>
+    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax"><img src="images/blue.jpg"></div>
+</div>
+<!-- <div class="parallax-container">
+  <div class="parallax"><img src="images/teal.jpg"></div>
+</div> -->
+
+
+
 <!-- <div class="home">
   </div> -->
 <!-- <p class="line-1 anim-typewriter">Hello, World!</p> -->
@@ -34,9 +51,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!-- </div> -->
 
-<!-- <div class="portfolio"></div>
+{{ partial "timeline.html" .}}
 
-<div class="fun"></div> -->
+{{ partial "portfolio.html" .}}
+<div class="fun"></div>
 
 {{ partial "footer.html" .}}
 
