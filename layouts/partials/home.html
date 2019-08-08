@@ -1,0 +1,71 @@
+<div class="home">
+      <div class="valign-wrapper" style="width:100%;height:100%;position: absolute;">
+        <div class="valign" style="width:100%;">
+          <div class="container">
+           <div class="row">
+            <div class="col s12 m6">
+              <h1>Hello, world!</h1>
+                <h5>subheading about me</h5>
+                <div class="divider"></div>
+                <div class="section">
+                <div class="icons">
+                      <a href="https://instagram.com/it.compiles" class="fa fa-instagram fa-2x " target="_blank"></a>
+                      <a href="https://twitter.com/VanessaTostado" class="fa fa-twitter fa-2x" target="_blank"></a>
+                      <a href="https://medium.com/@vtostado" class="fa fa-medium fa-2x" target="_blank"></a>
+                      <a href="https://www.linkedin.com/in/vanessa-t-b79880b1/" class="fa fa-linkedin fa-2x" target="_blank"></a>
+                      <a href="https://github.com/vtostado" class="fa fa-github fa-2x" target="_blank"></a>
+                  </div>
+                  </div>
+            </div>
+            <div class="col s12 m6 show-on-medium-and-up hide-on-small-and-down">
+                <img src='images/avatar1.png' id="desktop" onmouseover="this.src='images/avatar2.png';" onmouseout="this.src='images/avatar1.png';" />
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+</div>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Hello, World!"];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 300);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+   </script>

@@ -11,7 +11,7 @@ nav{
   padding-right: 20px;
   padding-top: 7px;
   height: 80px !important;
-  /* box-shadow: none !important; */
+  box-shadow: none !important;
 
 }
 
@@ -32,4 +32,42 @@ nav ul a {
 nav .sidenav-trigger{
   color: blue;
   float: right !important;
+}
+
+.home{
+  /* background-color: black; */
+  height: 700px;
+  text-align: center;
+}
+.home h1{
+  font-family: 'Montserrat', sans-serif!important;
+  white-space: pre-line !important;
+  text-transform: uppercase;
+
+}
+.home img{
+  width: 120%;
+}
+
+.home  {
+  height: 650px !important;
+  width: auto;
+}
+
+.home .icons a {
+  padding-right: 30px;
+}
+
+.home .show-on-med-and-down img {
+  width: 50%;
+}
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
