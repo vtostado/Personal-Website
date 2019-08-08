@@ -1,11 +1,8 @@
-@font-face {
-    font-family: "Avant Garde Gothic";
-    src: url(avantgardegothic.woff);
-}
+
 
 body{
   color: black;
-  font-family: 'montserrat';
+  font-family: 'Montserrat', sans-serif!important;
 }
 
 nav{
@@ -20,11 +17,7 @@ nav{
 
 nav .nav-wrapper .brand-logos{
   float: left !important;
-  /* padding-left: 20px !important; */
-  /* padding-top: 20px !important; */
 }
-
-
 
 nav img{
   height: 64px !important;
@@ -33,12 +26,10 @@ nav img{
 nav ul a {
   color: black !important;
   font-family: 'Montserrat', sans-serif!important;
-  /* padding-top: 30px !important; */
   font-size: 1.3rem !important;
 }
 
 nav .sidenav-trigger{
   color: blue;
   float: right !important;
-
 }
